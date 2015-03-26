@@ -2,15 +2,12 @@ package ru.yandex.metricaworkshop.sender;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
-
-import com.yandex.metrica.YandexMetrica;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -52,41 +49,11 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.send_user_info:
-                sendUserInfo();
+                Toast.makeText(getActivity(), "send_user_info button clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.send_workshop_rating:
-                sendWorkshopRating();
+                Toast.makeText(getActivity(), "send_workshop_rating button clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
-    }
-
-    private void sendUserInfo() {
-
-        String age = mAgeSpinner.getSelectedItem().toString();
-        String gender = mGenderSpinner.getSelectedItem().toString();
-        String stateOfEducation = mStateOfEducationSpinner.getSelectedItem().toString();
-        String workStatus = mWorkStatusSpinner.getSelectedItem().toString();
-        String absenceReason = mAbsenceReasonSpinner.getSelectedItem().toString();
-
-        UserInfo userInfo = new UserInfo(age, gender, stateOfEducation, workStatus, absenceReason);
-        String jsonString = userInfo.toJson();
-        Log.i("MainActivity", "userInfoJsonString: " + jsonString);
-
-        sendEventToMetrica(Consts.USER_INFO_EVENT_NAME, jsonString);
-    }
-
-    private void sendWorkshopRating() {
-        String rating = mRatingSpinner.getSelectedItem().toString();
-        UserInfo userInfo = new UserInfo(rating);
-        String jsonString = userInfo.toJson();
-        Log.i("MainActivity", "workshopRating: " + jsonString);
-
-        sendEventToMetrica(Consts.USER_INFO_EVENT_NAME, jsonString);
-    }
-
-    private void sendEventToMetrica(String eventName, String jsonContent) {
-        YandexMetrica.reportEvent(eventName, jsonContent);
-        YandexMetrica.sendEventsBuffer();
-        Toast.makeText(getActivity(), getString(R.string.toast_sending_report), Toast.LENGTH_SHORT).show();
     }
 }
