@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/YandexMetricaWorkshopSender/YandexMetricaWorkshopSender.iml" filepath="$PROJECT_DIR$/YandexMetricaWorkshopSender/YandexMetricaWorkshopSender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yandex_metrica_workshop_sender.iml" filepath="$PROJECT_DIR$/yandex_metrica_workshop_sender.iml" />
+    </modules>
+  </component>
+</project>
+
