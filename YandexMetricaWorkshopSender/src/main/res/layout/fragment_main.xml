@@ -15,67 +15,9 @@
         tools:context=".MainActivity$PlaceholderFragment">
 
         <TextView
-            style="@style/DefaultTextViewStyle"
-            android:text="@string/age"/>
-
-        <Spinner
-            android:id="@+id/age"
-            style="@style/DefaultSpinnerStyle"
-            android:entries="@array/age_array"/>
-
-        <TextView
-            style="@style/DefaultTextViewStyle"
-            android:text="@string/gender"/>
-
-        <Spinner
-            android:id="@+id/gender"
-            style="@style/DefaultSpinnerStyle"
-            android:entries="@array/gender_array"/>
-
-        <TextView
-            style="@style/DefaultTextViewStyle"
-            android:text="@string/stage_of_education"/>
-
-        <Spinner
-            android:id="@+id/stage_of_education"
-            style="@style/DefaultSpinnerStyle"
-            android:entries="@array/stage_of_education_array"/>
-
-        <TextView
-            style="@style/DefaultTextViewStyle"
-            android:text="@string/work_status"/>
-
-        <Spinner
-            android:id="@+id/work_status"
-            style="@style/DefaultSpinnerStyle"
-            android:entries="@array/work_status_array"/>
-
-        <TextView
-            style="@style/DefaultTextViewStyle"
-            android:text="@string/absence_reason"/>
-
-        <Spinner
-            android:id="@+id/absence_reason"
-            style="@style/DefaultSpinnerStyle"
-            android:entries="@array/absence_reason_array"/>
-
-        <Button
-            android:id="@+id/send_user_info"
-            style="@style/SendButtonStyle"/>
-
-        <TextView
-            style="@style/DefaultTextViewStyle"
-            android:text="@string/workshop_rating"/>
-
-        <Spinner
-            android:id="@+id/workshop_rating"
-            style="@style/DefaultSpinnerStyle"
-            android:entries="@array/workshop_rating_array"/>
-
-        <Button
-            android:id="@+id/send_workshop_rating"
-            style="@style/SendButtonStyle"/>
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello world"/>
     </LinearLayout>
 
 </ScrollView>
