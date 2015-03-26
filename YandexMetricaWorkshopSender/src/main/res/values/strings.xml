@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MWSender</string>
+
+    <string name="age">Возраст</string>
+    <string-array name="age_array">
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+    </string-array>
+
+    <string name="gender">Пол</string>
+
+    <string-array name="gender_array">
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+
+    <string name="stage_of_education">Этап обучения</string>
+
+    <string-array name="stage_of_education_array">
+        <item>1 курс</item>
+        <item>2 курс</item>
+        <item>3 курс</item>
+        <item>4 курс</item>
+        <item>5 курс</item>
+        <item>Магистратура</item>
+    </string-array>
+
+    <string name="work_status">Статус</string>
+
+    <string-array name="work_status_array">
+        <item>Работаю по специальности</item>
+        <item>Ищу работу по специальности</item>
+        <item>Работаю не по специальности</item>
+        <item>Не работаю</item>
+    </string-array>
+
+    <string name="absence_reason">Основная причина пропуска пар</string>
+    
+    <string-array name="absence_reason_array">
+        <item>Работаю</item>
+        <item>Личные дела</item>
+        <item>Лень</item>
+        <item>Не пропускаю</item>
+    </string-array>
+    
+    <string name="workshop_rating">Оцените наше мероприятие</string>
+
+    <string-array name="workshop_rating_array">
+        <item>Отлично</item>
+        <item>Ожидал большего</item>
+        <item>Не понравилось</item>
+        <item>Куда я попал?</item>
+    </string-array>
+
+    <string name="send">Отправить</string>
+
+    <string name="toast_sending_report">Отправка события в метрику</string>
+
+</resources>
